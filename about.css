@@ -1,0 +1,107 @@
+/* Color Pallete */
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-heading: #1b0760;
+    --color-body: #918ca4;
+    --color-body-darker: #5c5577;
+    --border-color: #ccc;
+    --border-radius: 40px;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  /* Body */
+  body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+  }
+  /* typography */
+  h1 {
+    font-size: 7rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-top: 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 8rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Links Component */
+  a {
+    text-decoration: none;
+  }
+  .link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: margin 0.15s;
+  }
+  .link-arrow::after {
+    content: "→";
+    margin: 0.5rem;
+  }
+  .link-arrow:hover::after {
+    margin: 1rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .link-arrow {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Badge Component */
+  .badge {
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+  .badge--secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+  }
+  .badge--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  .badge-small {
+    font-size: 1.6rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .badge {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
